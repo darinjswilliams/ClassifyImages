@@ -1,0 +1,96 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+Filename=: Dog_01.jpg   Pet Label= dog
+Filename=: Animal_Name_01.jpg   Pet Label= animal name
+Filename=: Object_Name_01.jpg   Pet Label= object name
+Filename=: Dog_02.jpg   Pet Label= dog
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                     Dog_01.jpg  label:                        dog
+ 2 key:             Animal_Name_01.jpg  label:                animal name
+ 3 key:             Object_Name_01.jpg  label:                object name
+ 4 key:                     Dog_02.jpg  label:                        dog
+
+Filename= Dog_01.jpg 
+pet_image Label= dog 
+Classifier Label= german shepherd, german shepherd dog, german police dog, alsatian 
+match= 1
+
+Filename= Animal_Name_01.jpg 
+pet_image Label= animal name 
+Classifier Label= lynx 
+match= 0
+
+Filename= Object_Name_01.jpg 
+pet_image Label= object name 
+Classifier Label= volcano 
+match= 0
+
+Filename= Dog_02.jpg 
+pet_image Label= dog 
+Classifier Label= german shepherd, german shepherd dog, german police dog, alsatian 
+match= 1
+
+     MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian
+
+ NOT A MATCH:
+
+            Animal_Name_01.jpg: 
+Real:                animal name   Classifier:                           lynx
+
+            Object_Name_01.jpg: 
+Real:                object name   Classifier:                        volcano
+
+# Total Images 4 # Matches: 2 # NOT Matches: 2
+
+     MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian  
+PetLabelDog: 1  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+            Animal_Name_01.jpg: 
+Real:                animal name   Classifier:                           lynx  
+PetLabelDog: 0  ClassLabelDog: 0
+
+            Object_Name_01.jpg: 
+Real:                object name   Classifier:                        volcano  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 2 # NOT Matches: 2
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+
+*** Results Summary for CNN Model Architecture VGG ***
+N Images            :   4
+N Dog Images        :   2
+N Not-Dog Images    :   2
+
+Pecentage Name:                  pct_match  Percentage Value:             50.0
+Pecentage Name:           pct_correct_dogs  Percentage Value:            100.0
+Pecentage Name:          pct_correct_breed  Percentage Value:            100.0
+Pecentage Name:        pct_correct_notdogs  Percentage Value:            100.0
+
+** Total Elapsed Runtime: 0:0:6

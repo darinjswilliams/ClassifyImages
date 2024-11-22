@@ -1,0 +1,37 @@
+Questions regarding Uploaded Image Classification:
+
+1. Did the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed? If not, report the differences in the classifications.
+
+Answer: Yes
+
+
+2. Did each of the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed of dog as that model architecture classified Dog_02.jpg? If not, report the differences in the classifications.
+
+Answer: No, Resnet and Vgg Models classified the Dog Images  as the same breed.  The Alexnet model classified the german shepard dog as a kit fox
+vulpes macrotis.
+
+Resnet - Real:    german shephard   Classifier: german shepherd, german shepherd dog, german police dog, alsatian
+VGG - Real:       german shephard   Classifier: german shepherd, german shepherd dog, german police dog, alsatian
+Alexnet - Real:   german shephard   Classifier:   kit fox, vulpes macrotis
+
+
+3. Did the three model architectures correctly classify Animal_Name_01.jpg and Object_Name_01.jpg to not be dogs? If not, report the misclassifications.
+
+Answer: No, the best classification came from VGG model
+
+VGG 
+Animal_Name_01.jpg  - Real:   animal name   Classifier:   lynx
+Object_Name_01.jpg -  Real:   object name   Classifier:   volcano
+
+Resnet
+Animal_Name_01.jpg - Real:    animal name   Classifier:   norwegian elkhound, elkhound
+Object_Name_01.jpg - Real:    object name   Classifier:   valley, vale
+
+Alexnet
+Animal_Name_01.jpg - Real:    animal name   Classifier: african hunting dog, hyena dog, cape hunting dog, lycaon pictus  PetLabelDog: 0  ClassLabelDog: 0
+Object_Name_01.jpg - Real:    object name   Classifier: volcano  PetLabelDog: 0  ClassLabelDog: 0
+
+
+4. Based upon your answers for questions 1. - 3. above, select the model architecture that you feel did the best at classifying the four uploaded images. Describe why you selected that model architecture as the best on uploaded image classification.
+
+Answer:  The VGG model was the best for classifying the objects. It provided an accurate classification of the the different objects. The Resnet model was second, than Alexnet which ran fast but was not that accurate
